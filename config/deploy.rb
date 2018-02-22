@@ -30,5 +30,5 @@ set :puma_preload_app, false
 set :ssh_options, {
  forward_agent: true,
  auth_methods: ["publickey"],
- keys: %w(/home/phani/Downloads/phanikey2.pem),
+ keys: %w(/home/phani/Downloads/phanikey2.pem)
 }
