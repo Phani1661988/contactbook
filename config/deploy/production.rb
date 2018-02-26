@@ -12,7 +12,7 @@ set :ssh_options, {
  keys: %w(/home/phani/Downloads/phanikey2.pem)
 }
 
-server '18.219.231.219', user: 'deploy', roles: %w{web app db}
+server '18.219.137.90', user: 'deploy', roles: %w{web app db}
 # role-based syntax
 # ==================
 
