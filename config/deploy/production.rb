@@ -6,9 +6,13 @@
 # server "example.com", user: "deploy", roles: %w{app db web}, my_property: :my_value
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
+set :ssh_options, {
+ forward_agent: true,
+ auth_methods: ["publickey"],
+ keys: %w(/home/phani/Downloads/phanikey2.pem)
+}
 
-
-server '18.216.224.228', user: 'deploy', roles: %w{web app db}
+server '18.219.231.219', user: 'deploy', roles: %w{web app db}
 # role-based syntax
 # ==================
 
